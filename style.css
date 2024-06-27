@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+*::selection {
+    background: #fff;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1900ff;
+}
+
+.wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    height:350px;
+    max-width:370px;
+    border-radius: 80px;
+    width: 90%;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ff0000;
+    margin-top: 15px;
+}
+
+.btn_group {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+button {
+    width: 80%;
+    max-width: 150px;
+    height: 40px;
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #0ef;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    color: #ff0000;
+    box-shadow:
+        0 0 10px #0ef,
+        0 0 20px #0ef,
+        0 0 40px #0ef,
+        0 0 80px #0ef,
+        0 0 160px #0ef;
+}
+
+button:nth-child(1) {
+    background: #f1f1f1;
+    margin-left: -170px;
+}
+
+button:nth-child(2) {
+    color: #282A35;
+    position: absolute; 
+    margin-right: -170px;
+
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    .btn_group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 30%;
+        max-width: none;
+        margin-bottom: 10px;
+        position: relative; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 20%;    
+    }
+
+    button:nth-child(1) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    button:nth-child(2) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
