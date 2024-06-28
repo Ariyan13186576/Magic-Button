@@ -9,9 +9,14 @@ yesBtn.addEventListener('click', () => {
     question.innerText = 'I Love You Too!';
 });
 
+noBtn.addEventListener('click', () => {
+    question.innerText = 'Oh my god, What is the problem?';
+});
+
 noBtn.addEventListener('mouseover', () => {
     const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width));
     const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height));
     noBtn.style.left = i + 'px';
     noBtn.style.top = j + 'px';
 });
+
